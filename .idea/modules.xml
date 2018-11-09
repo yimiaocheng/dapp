@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dapp.iml" filepath="$PROJECT_DIR$/dapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-commom/dapp-commom.iml" filepath="$PROJECT_DIR$/dapp-commom/dapp-commom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-commom/dapp-commom-constants/dapp-commom-constants.iml" filepath="$PROJECT_DIR$/dapp-commom/dapp-commom-constants/dapp-commom-constants.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-commom/dapp-commom-dto/dapp-commom-dto.iml" filepath="$PROJECT_DIR$/dapp-commom/dapp-commom-dto/dapp-commom-dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-commom/dapp-commom-enums/dapp-commom-enums.iml" filepath="$PROJECT_DIR$/dapp-commom/dapp-commom-enums/dapp-commom-enums.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-commom/dapp-commom-exception/dapp-commom-exception.iml" filepath="$PROJECT_DIR$/dapp-commom/dapp-commom-exception/dapp-commom-exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-commom/dapp-commom-pom/dapp-commom-pom.iml" filepath="$PROJECT_DIR$/dapp-commom/dapp-commom-pom/dapp-commom-pom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-commom/dapp-commom-utils/dapp-commom-utils.iml" filepath="$PROJECT_DIR$/dapp-commom/dapp-commom-utils/dapp-commom-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-server/dapp-server.iml" filepath="$PROJECT_DIR$/dapp-server/dapp-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-server/dapp-server-base/dapp-server-base.iml" filepath="$PROJECT_DIR$/dapp-server/dapp-server-base/dapp-server-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-server/dapp-server-eth/dapp-server-eth.iml" filepath="$PROJECT_DIR$/dapp-server/dapp-server-eth/dapp-server-eth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-server/dapp-server-market/dapp-server-market.iml" filepath="$PROJECT_DIR$/dapp-server/dapp-server-market/dapp-server-market.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-server/dapp-server-ore/dapp-server-ore.iml" filepath="$PROJECT_DIR$/dapp-server/dapp-server-ore/dapp-server-ore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-server/dapp-server-txmanager/dapp-server-txmanager.iml" filepath="$PROJECT_DIR$/dapp-server/dapp-server-txmanager/dapp-server-txmanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-springcloud/dapp-springcloud.iml" filepath="$PROJECT_DIR$/dapp-springcloud/dapp-springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-config/dapp-springcloud-config.iml" filepath="$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-config/dapp-springcloud-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-eureka/dapp-springcloud-eureka.iml" filepath="$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-eureka/dapp-springcloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-gateway/dapp-springcloud-gateway.iml" filepath="$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-gateway/dapp-springcloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-zuul/dapp-springcloud-zuul.iml" filepath="$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-zuul/dapp-springcloud-zuul.iml" />
+    </modules>
+  </component>
+</project>

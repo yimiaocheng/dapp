@@ -1,0 +1,6 @@
+datasource:
+  url: jdbc:mysql://localhost:3306/manage?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+  username: root
+  password: root
+  #password: RJitDWBW6iB8Ab4J
+

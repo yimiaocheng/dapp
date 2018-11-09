@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dapp.server.market.mapper.CurrencyMarketMapper">
+    <resultMap id="CurrencyMarketMap" type="com.dapp.server.market.dto.CurrencyMarketDto">
+        <result property="id" column="id"/>
+        <result property="currencyPair" column="currency_pair"/>
+        <result property="amount" column="amount"/>
+        <result property="timestamp" column="timestamp"/>
+    </resultMap>
+    <select id="get" resultMap="CurrencyMarketMap" parameterType="java.util.Map">
+        SELECT * FROM dapp_currency_market
+        WHERE currency_pair = #{currencyPair}
+        <!--<if test="timestamp != null">-->
+            <!--AND timestamp = #{timestamp}-->
+        <!--</if>-->
+        ORDER BY `timestamp` DESC LIMIT 0,1
+    </select>
+
+    <select id="query" resultMap="CurrencyMarketMap" parameterType="java.util.Map">
+        SELECT * FROM dapp_currency_market
+        WHERE currency_pair = #{currencyPair}
+        <if test="startTimestamp != null">
+            AND timestamp &gt;= #{startTimestamp}
+        </if>
+        <if test="endTimestamp != null">
+            AND timestamp &lt;= #{endTimestamp}
+        </if>
+        ORDER BY `timestamp` DESC
+    </select>
+
+</mapper>

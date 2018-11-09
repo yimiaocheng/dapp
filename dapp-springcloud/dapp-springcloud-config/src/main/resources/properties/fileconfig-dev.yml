@@ -1,0 +1,5 @@
+file:
+  upload:
+    base-path: E:\workspace\dapp\dapp-server\dapp-server-files\src\main\resources\files
+  pic:
+    suffix: jpg,png,

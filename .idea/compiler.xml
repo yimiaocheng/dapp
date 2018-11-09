@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dapp-commom-constants" />
+        <module name="dapp-commom-dto" />
+        <module name="dapp-commom-enums" />
+        <module name="dapp-commom-exception" />
+        <module name="dapp-commom-pom" />
+        <module name="dapp-commom-utils" />
+        <module name="dapp-server-base" />
+        <module name="dapp-server-eth" />
+        <module name="dapp-server-market" />
+        <module name="dapp-server-ore" />
+        <module name="dapp-server-txmanager" />
+        <module name="dapp-springcloub-gateway" />
+        <module name="dapp-springcloud-config" />
+        <module name="dapp-springcloud-eureka" />
+        <module name="dapp-springcloud-gateway" />
+        <module name="dapp-springcloud-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dapp" target="1.8" />
+      <module name="dapp-commom" target="1.8" />
+      <module name="dapp-commom-constants" target="1.8" />
+      <module name="dapp-commom-dto" target="1.8" />
+      <module name="dapp-commom-enums" target="1.8" />
+      <module name="dapp-commom-exception" target="1.8" />
+      <module name="dapp-commom-pom" target="1.8" />
+      <module name="dapp-commom-utils" target="1.8" />
+      <module name="dapp-server" target="1.8" />
+      <module name="dapp-server-base" target="1.8" />
+      <module name="dapp-server-eth" target="1.8" />
+      <module name="dapp-server-market" target="1.8" />
+      <module name="dapp-server-ore" target="1.8" />
+      <module name="dapp-server-txmanager" target="1.8" />
+      <module name="dapp-springcloub-gateway" target="1.8" />
+      <module name="dapp-springcloud" target="1.8" />
+      <module name="dapp-springcloud-config" target="1.8" />
+      <module name="dapp-springcloud-eureka" target="1.8" />
+      <module name="dapp-springcloud-gateway" target="1.8" />
+      <module name="dapp-springcloud-zuul" target="1.8" />
+      <module name="springcloub" target="1.8" />
+      <module name="tx-manager" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

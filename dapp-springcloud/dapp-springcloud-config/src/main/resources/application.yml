@@ -1,0 +1,26 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: dapp-config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/properties/
+        git:
+          uri: https://github.com/spring-cloud-samples/config-repo
+  security:
+    user:
+      name: admin
+      password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123456@localhost:8001/eureka/
+  instance:
+    prefer-ip-address: true
+
+

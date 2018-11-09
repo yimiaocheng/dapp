@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dapp.server.eth.mapper.WalletTokenTransferMapper">
+	<resultMap id="WalletTokenTransferMap" type="com.dapp.server.eth.dto.WalletTokenTransfertDto">
+		<result property="fromAddr" column="from_addr"/>
+		<result property="toAddr" column="to_addr"/>
+		<result property="descr" column="descr"/>
+		<result property="amount" column="amount"/>
+		<result property="transferType" column="transfer_type"/>
+		<result property="hash" column="hash"/>
+		<result property="timestamp" column="timestamp"/>
+		<result property="gasPrice" column="gas_price"/>
+		<result property="status" column="status"/>
+	</resultMap>
+
+</mapper>

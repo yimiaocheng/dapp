@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dapp.server.ore.mapper.SysParamMapper">
+	<resultMap id="CoinMap" type="com.dapp.server.ore.dto.SysParamDto">
+		<result property="paramName" column="param_name"/>
+		<result property="paramValue" column="param_value"/>
+		<result property="id" column="id"/>
+		<result property="paramDescr" column="param_descr"/>
+	</resultMap>
+
+</mapper>

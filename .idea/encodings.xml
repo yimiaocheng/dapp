@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-commom" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-commom/dapp-commom-constants" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-commom/dapp-commom-dto" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-commom/dapp-commom-enums" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-commom/dapp-commom-exception" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-commom/dapp-commom-pom" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-commom/dapp-commom-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-server/dapp-server-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-server/dapp-server-eth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-server/dapp-server-market" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-server/dapp-server-ore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-server/dapp-server-txmanager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-springcloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dapp-springcloud/dapp-springcloud-zuul" charset="UTF-8" />
+  </component>
+</project>

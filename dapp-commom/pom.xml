@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dapp</artifactId>
+        <groupId>com.dapp</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dapp.commom</groupId>
+    <artifactId>dapp-commom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>dapp-commom-dto</module>
+        <module>dapp-commom-utils</module>
+        <module>dapp-commom-exception</module>
+        <module>dapp-commom-pom</module>
+        <module>dapp-commom-enums</module>
+        <module>dapp-commom-constants</module>
+    </modules>
+
+
+</project>

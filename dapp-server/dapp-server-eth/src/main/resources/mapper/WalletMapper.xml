@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dapp.server.eth.mapper.WalletMapper">
+	<resultMap id="WalletMap" type="com.dapp.server.eth.dto.WalletDto">
+		<result property="privateKey" column="private_key"/>
+		<result property="userOpenId" column="user_open_id"/>
+		<result property="balance" column="balance"/>
+		<result property="createTime" column="create_time"/>
+		<result property="keystore" column="keystore"/>
+		<result property="updateTime" column="update_time"/>
+		<result property="addr" column="addr"/>
+	</resultMap>
+
+</mapper>

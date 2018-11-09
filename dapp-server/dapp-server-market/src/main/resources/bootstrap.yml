@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      profile: dev
+      username: admin
+      password: 123456
+      name: dbconfig,redisconfig,constantsconfig，
+      discovery:
+        enabled: true
+        service-id: dapp-config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123456@localhost:8001/eureka/
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: false

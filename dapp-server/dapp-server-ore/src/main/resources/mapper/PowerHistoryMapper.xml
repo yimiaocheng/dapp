@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dapp.server.ore.mapper.PowerHistoryMapper">
+	<resultMap id="PowerHistoryMap" type="com.dapp.server.ore.dto.PowerHistoryDto">
+		<result property="powerCount" column="power_count"/>
+		<result property="userOpenId" column="user_open_id"/>
+		<result property="historyType" column="history_type"/>
+		<result property="createTime" column="create_time"/>
+		<result property="id" column="id"/>
+		<result property="taskId" column="task_id"/>
+	</resultMap>
+
+</mapper>
