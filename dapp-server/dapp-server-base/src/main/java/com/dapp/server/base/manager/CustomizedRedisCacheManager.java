@@ -6,13 +6,18 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.cache.Cache;
+import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;
-import org.springframework.data.redis.core.RedisOperations;
+import org.springframework.data.redis.cache.RedisCacheWriter;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 重写redis缓存管理器
+ * 重写 RedisCacheManager createCache 方法
+ * 在缓存名字上添加过期时间表达式 如:cachename#60*60
+ */
 public class CustomizedRedisCacheManager extends RedisCacheManager {
     private static final Logger logger = LoggerFactory.getLogger(CustomizedRedisCacheManager.class);
 
@@ -21,15 +26,37 @@ public class CustomizedRedisCacheManager extends RedisCacheManager {
     @Autowired
     DefaultListableBeanFactory beanFactory;
 
-    public CustomizedRedisCacheManager(RedisOperations redisOperations) {
-        super(redisOperations);
+    public CustomizedRedisCacheManager(RedisCacheWriter cacheWriter,
+                                       RedisCacheConfiguration defaultCacheConfiguration) {
+        super(cacheWriter, defaultCacheConfiguration);
     }
 
-    public CustomizedRedisCacheManager(RedisOperations redisOperations, Collection<String> cacheNames) {
-        super(redisOperations, cacheNames);
+    public CustomizedRedisCacheManager(RedisCacheWriter cacheWriter,
+                                       RedisCacheConfiguration defaultCacheConfiguration,
+                                       String... initialCacheNames) {
+        super(cacheWriter, defaultCacheConfiguration, initialCacheNames);
     }
 
-    @Override
+    public CustomizedRedisCacheManager(RedisCacheWriter cacheWriter,
+                                       RedisCacheConfiguration defaultCacheConfiguration,
+                                       boolean allowInFlightCacheCreation, String... initialCacheNames) {
+        super(cacheWriter, defaultCacheConfiguration, allowInFlightCacheCreation, initialCacheNames);
+    }
+
+    public CustomizedRedisCacheManager(RedisCacheWriter cacheWriter,
+                                       RedisCacheConfiguration defaultCacheConfiguration,
+                                       Map<String, RedisCacheConfiguration> initialCacheConfigurations) {
+        super(cacheWriter, defaultCacheConfiguration, initialCacheConfigurations);
+    }
+
+    public CustomizedRedisCacheManager(RedisCacheWriter cacheWriter, RedisCacheConfiguration defaultCacheConfiguration,
+                                       Map<String, RedisCacheConfiguration> initialCacheConfigurations,
+                                       boolean allowInFlightCacheCreation) {
+        super(cacheWriter, defaultCacheConfiguration, initialCacheConfigurations, allowInFlightCacheCreation);
+    }
+
+
+   /* @Override
     public Cache getCache(String name) {
         String[] cacheParams = name.split(SEPARATOR);
         String cacheName = cacheParams[0];
@@ -44,7 +71,7 @@ public class CustomizedRedisCacheManager extends RedisCacheManager {
             this.setExpires(expiresMap);
         }
         return super.getCache(cacheName);
-    }
+    }*/
 
 
 }
