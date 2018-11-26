@@ -10,8 +10,11 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableDiscoveryClient
 public class ConfigApplication {
 
-    //我们都是ni
+    //我们都是niksjahdkjashk
     public static void main(String[] args) {
+
+
+        //dkshdkshkldhl
         SpringApplication.run(ConfigApplication.class, args);
     }
 }
